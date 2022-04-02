@@ -7,6 +7,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { QuienesSomosComponent } from './pages/quienes-somos/quienes-somos.component';
 import { ServiciosComponent } from './pages/servicios/servicios.component';
 import { EmpleadosComponent } from './private/gestion/empleados/empleados.component';
+import { EmpleadoComponent } from './private/gestion/empleado/empleado.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { EmpleadosComponent } from './private/gestion/empleados/empleados.compon
     HomeComponent,
     QuienesSomosComponent,
     ServiciosComponent,
-    EmpleadosComponent
+    EmpleadosComponent,
+    EmpleadoComponent
   ],
   imports: [
     BrowserModule,
