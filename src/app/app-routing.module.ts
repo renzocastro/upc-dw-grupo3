@@ -7,6 +7,7 @@ import {EmpleadosComponent} from "./private/gestion/empleados/empleados.componen
 import {EmpleadoComponent} from "./private/gestion/empleado/empleado.component";
 import {MultiserviciosComponent} from "./private/gestion/multiservicios/multiservicios.component";
 import {MultiservicioComponent} from "./private/gestion/multiservicio/multiservicio.component";
+import {ContactanosComponent} from './pages/contactanos/contactanos.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path: 'privado/empleados', component: EmpleadosComponent},
   {path: 'privado/empleado', component: EmpleadoComponent},
   {path: 'privado/servicios', component: MultiserviciosComponent},
-  {path: 'privado/servicio', component: MultiservicioComponent}
+  {path: 'privado/servicio', component: MultiservicioComponent},
+  {path: 'contactanos', component:ContactanosComponent}
   // { path: '',   redirectTo: '/home', pathMatch: 'full' }
 ];
 
