@@ -10,6 +10,8 @@ import { EmpleadosComponent } from './private/gestion/empleados/empleados.compon
 import { EmpleadoComponent } from './private/gestion/empleado/empleado.component';
 import { MultiserviciosComponent } from './private/gestion/multiservicios/multiservicios.component';
 import { MultiservicioComponent } from './private/gestion/multiservicio/multiservicio.component';
+import { ContactanosComponent } from './pages/contactanos/contactanos.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { MultiservicioComponent } from './private/gestion/multiservicio/multiser
     EmpleadosComponent,
     EmpleadoComponent,
     MultiserviciosComponent,
-    MultiservicioComponent
+    MultiservicioComponent,
+    ContactanosComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
