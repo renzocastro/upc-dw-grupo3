@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { EquipoService } from 'src/app/services/equipo.service';
+import { DataService } from 'src/app/services/data.service';
 import { EquipoData } from 'src/app/shared/equipo.interface';
 
 
@@ -14,7 +14,7 @@ export class EquipoComponent implements OnInit {
   public equiposData: EquipoData[];
 
   constructor(
-    private es: EquipoService
+    private es: DataService
   ) {
     this.equiposData = this.es.getEquipo();
   }
