@@ -10,6 +10,7 @@ import { EmpleadosComponent } from './private/gestion/empleados/empleados.compon
 import { EmpleadoComponent } from './private/gestion/empleado/empleado.component';
 import { MultiserviciosComponent } from './private/gestion/multiservicios/multiservicios.component';
 import { MultiservicioComponent } from './private/gestion/multiservicio/multiservicio.component';
+import { EquipoComponent } from './pages/equipo/equipo.component';
 import { ContactanosComponent } from './pages/contactanos/contactanos.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -23,6 +24,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     EmpleadoComponent,
     MultiserviciosComponent,
     MultiservicioComponent,
+    EquipoComponent,
     ContactanosComponent
   ],
   imports: [
