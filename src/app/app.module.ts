@@ -12,6 +12,7 @@ import { MultiserviciosComponent } from './private/gestion/multiservicios/multis
 import { MultiservicioComponent } from './private/gestion/multiservicio/multiservicio.component';
 import { ContactanosComponent } from './pages/contactanos/contactanos.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CitasComponent } from './pages/citas/citas.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     EmpleadoComponent,
     MultiserviciosComponent,
     MultiservicioComponent,
-    ContactanosComponent
+    ContactanosComponent,
+    CitasComponent
   ],
   imports: [
     BrowserModule,
