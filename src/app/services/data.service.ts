@@ -4,7 +4,7 @@ import { EquipoData } from '../shared/equipo.interface';
 @Injectable({
   providedIn: 'root'
 })
-export class EquipoService {
+export class DataService {
 
   constructor() { }
 
@@ -51,6 +51,41 @@ export class EquipoService {
         specialty: 'Jóvenes / Adultos / Adultos Mayores',
         description: 'Evaluación y terapia de Ansiedad, estrés, depresión, dependencia emocional, duelo, evaluación de problemas de aprendizaje. Ansiedad y depresión.',
         photo: 'assets/img/doctors/doctors-6.jpg'
+      }
+    ];
+  }
+
+  getTestimonios() {
+    return [
+      {
+        name: 'Ericka Castillo',
+        message: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum quibusdam quam facilis sed explicabo eaque nostrum, tenetur architecto, quia ex labore amet id, ipsa laudantium maxime quis iusto quod impedit?',
+        photo: 'assets/img/testimonials/testimonials-1.jpg'
+      },
+      {
+        name: 'sit amet',
+        message: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum quibusdam quam facilis sed explicabo eaque nostrum, tenetur architecto, quia ex labore amet id, ipsa laudantium maxime quis iusto quod impedit?',
+        photo: 'assets/img/testimonials/testimonials-2.jpg'
+      },
+      {
+        name: 'sit amet',
+        message: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum quibusdam quam facilis sed explicabo eaque nostrum, tenetur architecto, quia ex labore amet id, ipsa laudantium maxime quis iusto quod impedit?',
+        photo: 'assets/img/testimonials/testimonials-3.jpg'
+      },
+      {
+        name: 'sit amet',
+        message: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum quibusdam quam facilis sed explicabo eaque nostrum, tenetur architecto, quia ex labore amet id, ipsa laudantium maxime quis iusto quod impedit?',
+        photo: 'assets/img/testimonials/testimonials-4.jpg'
+      },
+      {
+        name: 'sit amet',
+        message: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum quibusdam quam facilis sed explicabo eaque nostrum, tenetur architecto, quia ex labore amet id, ipsa laudantium maxime quis iusto quod impedit?',
+        photo: 'assets/img/testimonials/testimonials-3.jpg'
+      },
+      {
+        name: 'sit amet',
+        message: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum quibusdam quam facilis sed explicabo eaque nostrum, tenetur architecto, quia ex labore amet id, ipsa laudantium maxime quis iusto quod impedit?',
+        photo: 'assets/img/testimonials/testimonials-4.jpg'
       }
     ];
   }
