@@ -10,6 +10,7 @@ import { EmpleadosComponent } from './private/gestion/empleados/empleados.compon
 import { EmpleadoComponent } from './private/gestion/empleado/empleado.component';
 import { MultiserviciosComponent } from './private/gestion/multiservicios/multiservicios.component';
 import { MultiservicioComponent } from './private/gestion/multiservicio/multiservicio.component';
+import { EquipoComponent } from './pages/equipo/equipo.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MultiservicioComponent } from './private/gestion/multiservicio/multiser
     EmpleadosComponent,
     EmpleadoComponent,
     MultiserviciosComponent,
-    MultiservicioComponent
+    MultiservicioComponent,
+    EquipoComponent
   ],
   imports: [
     BrowserModule,

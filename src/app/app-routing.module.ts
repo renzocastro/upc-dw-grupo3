@@ -7,11 +7,13 @@ import {EmpleadosComponent} from "./private/gestion/empleados/empleados.componen
 import {EmpleadoComponent} from "./private/gestion/empleado/empleado.component";
 import {MultiserviciosComponent} from "./private/gestion/multiservicios/multiservicios.component";
 import {MultiservicioComponent} from "./private/gestion/multiservicio/multiservicio.component";
+import { EquipoComponent } from './pages/equipo/equipo.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'quienes-somos', component: QuienesSomosComponent},
   {path: 'servicios', component: ServiciosComponent},
+  {path: 'equipo', component: EquipoComponent},
   {path: 'privado/empleados', component: EmpleadosComponent},
   {path: 'privado/empleado', component: EmpleadoComponent},
   {path: 'privado/servicios', component: MultiserviciosComponent},
