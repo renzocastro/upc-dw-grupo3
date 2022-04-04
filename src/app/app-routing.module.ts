@@ -9,11 +9,13 @@ import {MultiserviciosComponent} from "./private/gestion/multiservicios/multiser
 import {MultiservicioComponent} from "./private/gestion/multiservicio/multiservicio.component";
 import {ContactanosComponent} from './pages/contactanos/contactanos.component';
 import { CitasComponent } from './pages/citas/citas.component';
+import { EquipoComponent } from './pages/equipo/equipo.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'quienes-somos', component: QuienesSomosComponent},
   {path: 'servicios', component: ServiciosComponent},
+  {path: 'equipo', component: EquipoComponent},
   {path: 'privado/empleados', component: EmpleadosComponent},
   {path: 'privado/empleado', component: EmpleadoComponent},
   {path: 'privado/servicios', component: MultiserviciosComponent},
