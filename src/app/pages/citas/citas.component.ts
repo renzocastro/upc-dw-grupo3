@@ -2,31 +2,33 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import Swal from 'sweetalert2';
 
-
 @Component({
-  selector: 'app-contactanos',
-  templateUrl: './contactanos.component.html',
-  styleUrls: ['./contactanos.component.css']
+  selector: 'app-citas',
+  templateUrl: './citas.component.html',
+  styleUrls: ['./citas.component.css']
 })
-export class ContactanosComponent implements OnInit {
+export class CitasComponent implements OnInit {
 
   constructor(
-    private fb: FormBuilder
+    private cb: FormBuilder
   ) { }
 
-  contactform = this.fb.group({
+  citaform = this.cb.group({
     name: ['',Validators.required],
     email: ['',[Validators.required,Validators.email]],
-    phone: [''],
+    phone: ['',Validators.required],
     servicio: ['',Validators.required],
-    message: ['',Validators.required],
+    fecha: ['',Validators.required],
+    rangodeldia: [''],
+    psicologo: [''],
+    message: [''],
   })
 
   __enviar(){
-    if(this.contactform.valid){
-      console.log(this.contactform.value)
+    if(this.citaform.valid){
+      console.log(this.citaform.value)
       Swal.fire(
-        'Muchas Gracias por tu mensaje!',
+        'Muchas Gracias por su solicitud!',
         'Nos contactaremos pronto contigo!',
         'success'
       )
