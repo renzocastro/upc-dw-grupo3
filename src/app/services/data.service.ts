@@ -1,12 +1,25 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { EquipoData } from '../shared/equipo.interface';
+import { environment } from 'src/environments/environment';
+import { ServiceEntity } from '../shared/service.entity';
+import { map, switchMap } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
 
-  constructor() { }
+  constructor(
+    private http: HttpClient
+  ) { }
+
+  getServices() {
+    return this.http.get(`${environment.host}/api/service/listar`)
+      .pipe(
+        map((response: any) => <ServiceEntity[]>(response?.data ? response.data : []))
+      );
+  }
 
   getEquipo(): EquipoData[] {
     return [

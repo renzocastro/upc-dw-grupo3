@@ -10,18 +10,20 @@ import {MultiservicioComponent} from "./private/gestion/multiservicio/multiservi
 import {ContactanosComponent} from './pages/contactanos/contactanos.component';
 import { CitasComponent } from './pages/citas/citas.component';
 import { EquipoComponent } from './pages/equipo/equipo.component';
+import { LoginComponent } from './private/auth/login/login.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'quienes-somos', component: QuienesSomosComponent},
   {path: 'servicios', component: ServiciosComponent},
   {path: 'equipo', component: EquipoComponent},
-  {path: 'privado/empleados', component: EmpleadosComponent},
-  {path: 'privado/empleado', component: EmpleadoComponent},
-  {path: 'privado/servicios', component: MultiserviciosComponent},
-  {path: 'privado/servicio', component: MultiservicioComponent},
-  {path: 'contactanos', component:ContactanosComponent},
-  {path: 'citas', component:CitasComponent}
+  {path: 'contactanos', component: ContactanosComponent},
+  {path: 'citas', component: CitasComponent},
+  {path: 'admin/login', component: LoginComponent},
+  {path: 'admin/empleados', component: EmpleadosComponent},
+  {path: 'admin/empleado', component: EmpleadoComponent},
+  {path: 'admin/servicios', component: MultiserviciosComponent},
+  {path: 'admin/servicio', component: MultiservicioComponent},
   // { path: '',   redirectTo: '/home', pathMatch: 'full' }
 ];
 

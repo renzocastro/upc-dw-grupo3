@@ -12,8 +12,12 @@ import { MultiserviciosComponent } from './private/gestion/multiservicios/multis
 import { MultiservicioComponent } from './private/gestion/multiservicio/multiservicio.component';
 import { EquipoComponent } from './pages/equipo/equipo.component';
 import { ContactanosComponent } from './pages/contactanos/contactanos.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CitasComponent } from './pages/citas/citas.component';
+import { RecaptchaFormsModule, RecaptchaV3Module, RECAPTCHA_LANGUAGE, RECAPTCHA_V3_SITE_KEY } from 'ng-recaptcha';
+import { environment } from 'src/environments/environment';
+import { LoginComponent } from './private/auth/login/login.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,14 +32,26 @@ import { CitasComponent } from './pages/citas/citas.component';
     ContactanosComponent,
     CitasComponent,
     EquipoComponent,
-    ContactanosComponent
+    ContactanosComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RecaptchaV3Module,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: RECAPTCHA_V3_SITE_KEY,
+      useValue: environment.recaptcha.siteKey
+    },
+    {
+      provide: RECAPTCHA_LANGUAGE,
+      useValue: "es"
+    },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
