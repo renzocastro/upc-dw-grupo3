@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
   ) { }
 
   loginForm = this.fb.group({
-    user: ['', Validators.required],
+    email: ['', Validators.required],
     pw: ['', [Validators.required, Validators.email]],
   });
 
@@ -25,8 +25,9 @@ export class LoginComponent implements OnInit {
   }
 
   __send() {
-    //console.log(this.loginForm);
-    this.authService.login(this.loginForm).subscribe({
+    console.log(this.loginForm);
+
+    this.authService.login2(this.loginForm.value).subscribe({
       next: (data) => {
         console.log(data);
       },

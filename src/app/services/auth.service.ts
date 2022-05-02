@@ -19,7 +19,15 @@ export class AuthService {
     return this.recaptchaV3Service.execute('login')
       .pipe(
         map((token: string) => ({ ...formData.getRawValue(), captcha: token })),
-        switchMap((data: any) => this.http.post(`${environment.host}/api/auth/loginx`, data))
+        switchMap((data: any) => {
+          console.log(data);
+          return this.http.post(`${environment.host}/api/auth/login`, data)
+        })
       );
+  }
+
+  login2(body: any) {
+    console.log('body', body);
+    return this.http.post(`${environment.host}/api/auth/login`, body);
   }
 }
