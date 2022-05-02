@@ -11,6 +11,7 @@ import {ContactanosComponent} from './pages/contactanos/contactanos.component';
 import { CitasComponent } from './pages/citas/citas.component';
 import { EquipoComponent } from './pages/equipo/equipo.component';
 import { LoginComponent } from './private/auth/login/login.component';
+import { CargosComponent } from './private/gestion/cargos/cargos.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path: 'admin/empleado', component: EmpleadoComponent},
   {path: 'admin/servicios', component: MultiserviciosComponent},
   {path: 'admin/servicio', component: MultiservicioComponent},
+  {path: 'admin/cargos', component: CargosComponent},
   // { path: '',   redirectTo: '/home', pathMatch: 'full' }
 ];
 

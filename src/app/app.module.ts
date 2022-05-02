@@ -18,6 +18,8 @@ import { RecaptchaFormsModule, RecaptchaV3Module, RECAPTCHA_LANGUAGE, RECAPTCHA_
 import { environment } from 'src/environments/environment';
 import { LoginComponent } from './private/auth/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CargoComponent } from './private/gestion/cargo/cargo.component';
+import { CargosComponent } from './private/gestion/cargos/cargos.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,8 @@ import { HttpClientModule } from '@angular/common/http';
     EquipoComponent,
     ContactanosComponent,
     LoginComponent,
+    CargoComponent,
+    CargosComponent,
   ],
   imports: [
     BrowserModule,
