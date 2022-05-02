@@ -20,5 +20,12 @@ export class CargoService {
       );
   }
 
+  deleteCargo(code: string) {
+    return this.http.delete(`${environment.host}/api/job-positions/${code}`)
+      .pipe(
+        map((response: any) => <boolean>(response?.data ? response.data : false))
+      );
+  }
+
 
 }
