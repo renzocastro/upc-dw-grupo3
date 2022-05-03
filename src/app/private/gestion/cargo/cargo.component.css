@@ -1,0 +1,8 @@
+.form {
+  width: 700px;
+}
+
+.form .row {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}

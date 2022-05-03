@@ -12,6 +12,7 @@ import { CitasComponent } from './pages/citas/citas.component';
 import { EquipoComponent } from './pages/equipo/equipo.component';
 import { LoginComponent } from './private/auth/login/login.component';
 import { CargosComponent } from './private/gestion/cargos/cargos.component';
+import { CargoComponent } from './private/gestion/cargo/cargo.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -26,6 +27,8 @@ const routes: Routes = [
   {path: 'admin/servicios', component: MultiserviciosComponent},
   {path: 'admin/servicio', component: MultiservicioComponent},
   {path: 'admin/cargos', component: CargosComponent},
+  {path: 'admin/cargos/new', component: CargoComponent},
+  {path: 'admin/cargos/:id/edit', component: CargoComponent},
   // { path: '',   redirectTo: '/home', pathMatch: 'full' }
 ];
 

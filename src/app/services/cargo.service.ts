@@ -27,5 +27,14 @@ export class CargoService {
       );
   }
 
+  createCargo(entity: CargoEntity) {
+    return this.http.post(`${environment.host}/api/job-positions`, entity)
+      .pipe(
+        map((response: any) => {
+          return response?.data;
+        })
+      );
+  }
+
 
 }
