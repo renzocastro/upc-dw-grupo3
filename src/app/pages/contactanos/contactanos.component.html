@@ -1,92 +1,101 @@
 <!-- ======= Breadcrumbs Section ======= -->
 <section class="breadcrumbs">
-    <div class="container">
-      <div class="d-flex justify-content-between align-items-center">
-        <h2>Contáctanos</h2>
-      </div>
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <h2>Contáctanos</h2>
     </div>
-  </section><!-- End Breadcrumbs Section -->
-  
-  <section class="inner-page">
-  
-      <!-- ======= Contáctanos Section ======= -->
-      <div class="content">
-    
-        <div class="container">
-          <div class="row align-items-stretch no-gutters contact-wrap">
-            <div class="col-md-6">
-              <div class="form h-100">
-                <h3>Envianos un mensaje</h3>
-                <form [formGroup]="contactform" class="mb-5" method="post" id="contactForm" name="contactForm">
-                  <div class="row">
-                    <div class="col-md-6 form-group mb-5">
-                      <label for="" class="col-form-label">Nombre *</label>
-                      <input type="text" formControlName="name" class="form-control" name="name" id="name" placeholder="Nombre">
-                    </div>
-                    <div class="col-md-6 form-group mb-5">
-                      <label for="" class="col-form-label">Email *</label>
-                      <input type="text" formControlName="email" class="form-control" name="email" id="email"  placeholder="Correo Electronico">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6 form-group mb-5">
-                      <label for="" class="col-form-label">Telefono</label>
-                      <input type="text" formControlName="phone" class="form-control" name="phone" id="phone"  placeholder="Telefono">
-                    </div>
+  </div>
+</section><!-- End Breadcrumbs Section -->
 
-                    <div class="col-md-6 form-group mb-5">
-                        <label for="" class="col-form-label">Servicio *</label>
-                        <input class="form-control" formControlName="servicio" list="datalistOptions" id="exampleDataList" placeholder="Servicios">
-                        <datalist id="datalistOptions">
-                        <option value="Terapia de niños/as y adolescentes">
-                        <option value="Terapia de adultos y adultos mayores">
-                        <option value="Terapia de familias">
-                        <option value="Terapia de lenguaje">
-                        <option value="Programa de orientación vocacional">
-                        <option value="Evaluaciones psicológicas">
-                        </option>
-                        </datalist>
-                    </div>
-                  
-                    <!-- <div class="col-md-6 form-group mb-5">
+<section class="inner-page">
+
+  <!-- ======= Contáctanos Section ======= -->
+  <div class="content">
+
+    <div class="container">
+      <div class="row align-items-stretch no-gutters contact-wrap">
+        <div class="col-md-6">
+          <div class="form h-100">
+            <h3>Envianos un mensaje</h3>
+            <form [formGroup]="contactform" class="mb-5" method="post" id="contactForm" name="contactForm">
+              <div class="row">
+                <div class="col-md-6 form-group mb-5">
+                  <label for="" class="col-form-label">Nombre *</label>
+                  <input type="text" formControlName="name" class="form-control" name="name" id="name"
+                    placeholder="Nombre">
+                </div>
+                <div class="col-md-6 form-group mb-5">
+                  <label for="" class="col-form-label">Email *</label>
+                  <input type="text" formControlName="email" class="form-control" name="email" id="email"
+                    placeholder="Correo Electronico">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 form-group mb-5">
+                  <label for="" class="col-form-label">Telefono</label>
+                  <input type="text" formControlName="phone" class="form-control" name="phone" id="phone"
+                    placeholder="Telefono">
+                </div>
+
+                <div class="col-md-6 form-group mb-5">
+                  <label for="" class="col-form-label">Servicio *</label>
+                  <input class="form-control" formControlName="servicio" list="datalistOptions" id="exampleDataList"
+                    placeholder="Servicios">
+                  <datalist id="datalistOptions">
+                    <option value="Terapia de niños/as y adolescentes">
+                    <option value="Terapia de adultos y adultos mayores">
+                    <option value="Terapia de familias">
+                    <option value="Terapia de lenguaje">
+                    <option value="Programa de orientación vocacional">
+                    <option value="Evaluaciones psicológicas">
+                    </option>
+                  </datalist>
+                </div>
+
+                <!-- <div class="col-md-6 form-group mb-5">
                       <label for="" class="col-form-label">Servicio</label>
                       <input type="text" class="form-control" name="company" id="company"  placeholder="">
                     </div>-->
-                  </div>
-    
-                  <div class="row">
-                    <div class="col-md-12 form-group mb-5">
-                      <label for="message" class="col-form-label">Mensaje *</label>
-                      <textarea class="form-control" formControlName="message" name="message" id="message" cols="30" rows="4"  placeholder="Escribe tu mensaje"></textarea>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12 form-group">
-                      <button (click)="__enviar()"class="btn btn-primary rounded-8 py-2 px-4">Enviar Mensaje</button>
-                    </div>
-                  </div>
-                </form>
-               <!--  <p>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12 form-group mb-5">
+                  <label for="message" class="col-form-label">Mensaje *</label>
+                  <textarea class="form-control" formControlName="message" name="message" id="message" cols="30"
+                    rows="4" placeholder="Escribe tu mensaje"></textarea>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <button (click)="__enviar()" class="btn btn-primary rounded-8 py-2 px-4">Enviar Mensaje</button>
+                </div>
+              </div>
+            </form>
+            <!--  <p>
                     Datos del formulario: {{contactform.value | json}}
                 </p> -->
-               <!-- <div id="form-message-warning mt-4"></div> 
+            <!-- <div id="form-message-warning mt-4"></div> 
                 <div id="form-message-success">
                   Su mensaje fue enviado, pronto nos pondremos en contacto!
                 </div>-->
-    
-              </div>
-            </div>
-            <div class="col-md-6">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3899.5012150505277!2d-76.93758098483524!3d-12.214304791355795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b95f47655619%3A0x2edd6771463da5cf!2sCentro%20Psicol%C3%B3gico%20Super-Arte!5e0!3m2!1ses-419!2sbr!4v1649091366586!5m2!1ses-419!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              <!-- <div class="contact-info h-100" style="background-image: url('images/map.jpg')">
-                <a href="https://www.google.com/maps" target="_blank"></a> 
-              </div> -->
-            </div>
+
           </div>
         </div>
-    
+        <div class="col-md-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3899.5012150505277!2d-76.93758098483524!3d-12.214304791355795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b95f47655619%3A0x2edd6771463da5cf!2sCentro%20Psicol%C3%B3gico%20Super-Arte!5e0!3m2!1ses-419!2sbr!4v1649091366586!5m2!1ses-419!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <!-- <div class="contact-info h-100" style="background-image: url('images/map.jpg')">
+                <a href="https://www.google.com/maps" target="_blank"></a> 
+              </div> -->
+        </div>
       </div>
-  
- 
-  
-  </section>
+    </div>
+
+  </div>
+
+
+
+</section>
